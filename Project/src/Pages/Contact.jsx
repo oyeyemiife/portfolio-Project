@@ -13,10 +13,10 @@ const Contact = () => {
         <div>
           <p className='text-3xl font-semibold'>Contact me</p>
           <p className='text-2xl text-pink-200'>Have a Project in Mind?</p>
-          <p className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur similique laudantium iure. Fugit eveniet, itaque doloremque incidunt vel, voluptatum in fugiat quam, dicta molestias facere eius saepe aliquid sed.</p>
+          <p className='text-2xl'>I look forward to the possibility of working together on future endeavors!</p>
           </div>
-          <div className='sm:flex sm:justify-between hidden'>
-          <div className=' grid justify-between'>
+          <div className='sm:grid sm:gap-4 hidden'>
+          <div className=' sm:flex sm:justify-between '>
             <input className='text-2xl border-2 rounded-3xl p-2' type="text" placeholder='Enter your name' />
             <input className='text-2xl border-2 rounded-3xl p-2' type="text" placeholder='Company(Optional)' />
             <input className='text-2xl border-2 rounded-3xl p-2' type="email" placeholder='Enter your Email' />
@@ -73,7 +73,7 @@ const Contact = () => {
                     <div className='sb-footer-below'>
                         <div className='sb-footer-copyright'>
                             <p>
-                                @{new Date().getFullYear()} CodeInn.All right reserved.
+                               @{new Date().getFullYear()} CodeInn.All right reserved.
                             </p>
                   <div className='sb-footer-below-links'>
                     <a href="/terms"> <div> <p>Terms & Conditions</p></div></a>

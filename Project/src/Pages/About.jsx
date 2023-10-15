@@ -33,7 +33,9 @@ const About = () => {
             />
             <hr className='hr' />
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, repudiandae optio vitae quis quaerat aspernatur ab architecto ut eligendi non deleniti rem libero esse ex, recusandae facilis cupiditate? Laboriosam a velit rem cupiditate quo vitae nesciunt soluta. Eligendi incidunt voluptates officiis ipsam, at eius in iste itaque asperiores laborum cupiditate aliquam obcaecati id laboriosam error! Asperiores architecto soluta cumque quas esse quo quae voluptatibus expedita magni praesentium minima repellendus excepturi, optio quos officia reiciendis ipsum, blanditiis cum quia placeat, pariatur eaque? Voluptatum facilis fugiat sed corrupti officia, ex velit tenetur quae voluptas? Reiciendis labore quia praesentium id consequuntur facere enim.</p>
+          <p>Hello! I'm Ifeoluwa, a passionate and creative Frontend Developer with a keen eye for detail and a love for problem-solving. With 3 months of experience in the industry, I've had the privilege of working on diverse projects that have allowed me to grow and develop a wide range of skills. </p>
+          <p>I'm excited to share some of the projects I've worked on, and I hope you enjoy exploring my portfolio. If you have a project in mind or just want to connect, please don't hesitate.</p>
+          <p>Thank you for visiting my portfolio, and I look forward to the possibility of working together on future endeavors!</p>
               <div id='services'> 
                 <div className='container'>
                   <div className="services-list">

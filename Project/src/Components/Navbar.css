@@ -6,6 +6,7 @@
   width: 30px;
   position: relative;
 }
+
 .link::after{
   content: '';
   width: 0;
@@ -44,27 +45,25 @@
   font-size: 12px;
   font-weight: 300;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
   .outer {
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-    width: 100%; 
-    padding: 5px 5px; 
+    width: 25vw;
   }
-  .img{
-    display: none;
+  .img {
+    width: 100px;
+    position: relative;
+    animation: bounce 2s infinite;
   }
-  .outer-inner{
-    display: flex;
-    flex-direction: row;
-  }
-  .inner {
-    display: flex;
-    flex-direction: row; 
-  }
-
-  .link {
-    margin: 0 20px; 
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
   }
 }
