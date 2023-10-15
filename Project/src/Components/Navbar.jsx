@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import "./Navbar.css"
 import logo from "../Images/Logo.png"
-import home from "../Images/Home-page.png"
-import about from "../Images/About-me.png"
-import portfolio from "../Images/Portfolio.png"
-import contact from "../Images/Contact.png";
+import home from "../Images/home-page.png"
+import about from "../Images/about-me.png"
+import portfolio from "../Images/portfolio.png"
+import contact from "../Images/contact.png";
 
 
 
