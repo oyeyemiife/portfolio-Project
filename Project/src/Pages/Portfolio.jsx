@@ -21,7 +21,7 @@ const Portfolio = () => {
           <div className="work">
             <img src={age} alt="" />
             <div className="layer">
-              <h3>Age Calculator</h3>
+              <h3>Age sCalculator</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At esse beatae nihil sequi cupiditate neque nobis voluptatum placeat veritatis assumenda? Fuga omnis placeat doloremque debitis, nemo nostrum ex illum culpa.</p>
             </div>
           </div>
