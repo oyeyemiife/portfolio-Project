@@ -1,5 +1,11 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import html from "../Images/icons8-home-24.png/"
+import css from "../Images/icons8-css-filetype-64.png"
+import tailwind from "../Images/icons8-tailwindcss-48.png"
+import react from "../Images/icons8-react-native-64.png"
+import java from "../Images/icons8-java-script-64.png"
+import api from "../Images/icons8-api-64.png"
 import "./About.css";
 
 const About = () => {
@@ -50,22 +56,22 @@ const About = () => {
                     <div className='logo'>
           <div className='spinnerr'>
             <div className='face1'>
-              <img src="./src/Images/icons8-html-64.png" alt="" />
+              <img src={html} alt="" />
             </div>
             <div className='face2'>
-            <img src="./src/Images/icons8-css-filetype-64.png" alt=""/>
+            <img src={css} alt=""/>
             </div>
             <div className='face3'>
-            <img src="./src/Images/icons8-java-script-64.png" alt="" />
+            <img src={java} alt="" />
             </div>
             <div className='face4'>
-            <img src="./src/Images/icons8-tailwindcss-48.png" alt="" />
+            <img src={tailwind} alt="" />
             </div>
             <div className='face5'>
-            <img src="./src/Images/icons8-react-native-64.png" alt="" />
+            <img src={react} alt="" />
             </div>
             <div className='face6'>
-            <img src="./src/Images/icons8-api-64.png" alt="" />
+            <img src={api} alt="" />
             </div>
               </div>
               </div>

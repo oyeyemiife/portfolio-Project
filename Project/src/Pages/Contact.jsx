@@ -1,4 +1,8 @@
 import React from 'react'
+import ig from "../Images/instagram.png"
+import face from "../Images/facebook.png"
+import git from "../Images/github.png"
+import tweet from "../Images/twitter.png"
 import "./Contact.css";
 
 const Contact = () => {
@@ -38,10 +42,10 @@ const Contact = () => {
                       <h1 className='f-h1'> Let's Talk!</h1>
                       <p className='f-p'>Contact Info</p>
                       <ul className='f-li'>
-                      <li> <a href="https://www.instagram.com/ifeoluwa.oyeyemi/"><img className='footer-img' src="./src/Images/instagram.png" alt="" /></a></li>
-                            <li> <a href="https://www.facebook.com/login.php"> <img className='footer-img' src="./src/Images/facebook.png" alt="" /></a></li>
-                            <li><a href="https://github.com/dashboard"> <img className='footer-img' src="./src/Images/github.png" alt="" /></a></li>
-                            <li><a href="https://twitter.com/Yourfavoriteife"> <img className='footer-img' src="./src/Images/twitter.png" alt="" /></a></li>
+                      <li> <a href="https://www.instagram.com/ifeoluwa.oyeyemi/"><img className='footer-img' src={ig} alt="" /></a></li>
+                            <li> <a href="https://www.facebook.com/login.php"> <img className='footer-img' src={face} alt="" /></a></li>
+                            <li><a href="https://github.com/dashboard"> <img className='footer-img' src={git} alt="" /></a></li>
+                            <li><a href="https://twitter.com/Yourfavoriteife"> <img className='footer-img' src={tweet} alt="" /></a></li>
                     </ul>
                     </div>
                     <div className='sb-footer-links-div'>

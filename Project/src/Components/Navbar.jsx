@@ -1,30 +1,36 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import "./Navbar.css";
+import "./Navbar.css"
+import logo from "../Images/Logo.png"
+import home from "../Images/Home-page.png"
+import about from "../Images/About-me.png"
+import portfolio from "../Images/Portfolio.png"
+import contact from "../Images/Contact.png";
+
 
 
 const Navbar = () => {
     return (
         <nav className='outer'>
             <div className='img'>
-                <img src="./src/Images/Logo.png" alt="" />
+                <img src={logo} alt="" />
             </div>
             <div className='outer-inner'>
             <ul className='inner'>
                 <li className="link">
-                    <Link to="home" spy={true} smooth={true} offset={50} duration={800}  ><img className='imgg' src="./src/Images/home-page.png" alt="" /> 
+                    <Link to="home" spy={true} smooth={true} offset={50} duration={800}  ><img className='imgg' src={home} alt="" /> 
                     </Link>
                 </li>
                 <li className='link'>
-                    <Link to="about" spy={true} smooth={true} offset={50} duration={800} ><img className='imgg' src="./src/Images/about-me.png" alt="" />
+                    <Link to="about" spy={true} smooth={true} offset={50} duration={800} ><img className='imgg' src={about} alt="" />
                     </Link>
                 </li>
                 <li className='link'>
-                    <Link to="portfolio" spy={true} smooth={true} offset={50} duration={800} ><img  className='imgg' src="./src/Images/portfolio.png" alt="" />
+                    <Link to="portfolio" spy={true} smooth={true} offset={50} duration={800} ><img  className='imgg' src={portfolio} alt="" />
                     </Link> 
                 </li>
                 <li className='link'>
-                    <Link to="contacts"spy={true} smooth={true} offset={50} duration={800} ><img  className='imgg' src="./src/Images/contact.png" alt="" /></Link>
+                    <Link to="contacts"spy={true} smooth={true} offset={50} duration={800} ><img  className='imgg' src={contact} alt="" /></Link>
                 </li>
                 </ul>
             </div>
