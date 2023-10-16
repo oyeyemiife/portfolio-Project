@@ -1,5 +1,7 @@
 *{
   background-color: rgb(0, 0, 0);
+  font-family:'Courier New', Courier, monospace;
+ font-style: italic;
 }
  
 .imgg{
@@ -37,8 +39,12 @@
   margin-bottom: 20px;
 }
 .img{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ddacf5;
+  border-radius: 30px;
   margin-bottom: 20px;
-  width: 160px;
+  text-shadow: 10px 10px 5px #66e5e3;
 }
 .quotes {
   color: whitesmoke;

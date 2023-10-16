@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import "./Navbar.css"
-import logo from "../Images/Logo.png"
 import home from "../Images/home-page.png"
 import about from "../Images/about-me.png"
 import portfolio from "../Images/portfolio.png"
@@ -11,9 +10,11 @@ import contact from "../Images/contact.png";
 
 const Navbar = () => {
     return (
-        <nav className='outer'>
+        <nav className='outer opacity-95'>
             <div className='img'>
-                <img src={logo} alt="" />
+                <p>
+                    IFEOLUWA <br /> OYEYEMI
+                </p>
             </div>
             <div className='outer-inner'>
             <ul className='inner'>

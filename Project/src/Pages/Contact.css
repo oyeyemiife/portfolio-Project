@@ -47,6 +47,7 @@ img{
     margin: 0.5rem 0;
     cursor: pointer;
     color: #555454;
+    font-style: normal;
 }
 .sb-footer-below{
     display: flex;
@@ -64,6 +65,7 @@ img{
     margin-left: 2rem;
     font-weight: 600;
     color: #636363;
+    font-style: normal;
 }
 hr{
     color: white;

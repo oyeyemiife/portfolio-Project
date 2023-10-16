@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <div id='home'> 
-      <div className='home'>
+      <div className='home '>
       <h1 className='h1'>
         Hello, <br />
         I am <span> <TypeAnimation
