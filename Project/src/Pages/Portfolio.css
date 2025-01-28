@@ -1,105 +1,189 @@
- #portfolio{
-    height: max-content;
-    padding: 50px 50px;
-    font-family:'Courier New', Courier, monospace;
-    width: 87vw;
+#portfolio {
+  padding: 60px 40px;
+  min-height: 100vh;
+  color: wheat;
+  font-family: "Crimson Text", serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.work-list{
-    display: flex;
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.work {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.work:hover {
+  transform: translateY(-5px);
+}
+
+.work img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.layer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.layer h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.layer p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background: rgba(245, 222, 179, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+.view {
+  background: transparent;
+  border: 2px solid wheat;
+  color: wheat;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-family: "Crimson Text", serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view:hover {
+  background: wheat;
+  color: #1a1a1a;
+}
+
+@media screen and (max-width: 1024px) {
+  #portfolio {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .layer h3 {
+    font-size: 1.8rem;
+  }
+
+  .layer p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #portfolio {
+    padding: 30px 15px;
+  }
+
+  .work {
     flex-direction: column;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 15px;
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-.work img{
-   width: 50%;
-   height: 180px; 
-   border-radius: 10px;
-   display: block;
-   transition: transform 0.5s;
-}
-.layer{
-    color: #ddacf5;
-    width: 70%;
-    height: 0;
-    border-radius: 10px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
     text-align: center;
-    transition: height 0.5s;
+    padding: 1rem;
+  }
+
+  .work img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .layer h3 {
+    font-size: 1.5rem;
+  }
+
+  .layer p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-tag {
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+  }
 }
-.layer h3{
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer p{
-    font-size: 13px;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.works{
-    display: none;
-}
-.phone{
-    display: none;
-}
-.btn{
-    color: #66e5e3;
-    display: block;
-    margin-top: -13px;
-    margin-left: 50%;
-    width: fit-content;
-    border: 1px solid #ddacf5;
-    padding: 12px;
-    border-radius: 6px;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #66e5e3;
+
+@media screen and (max-width: 480px) {
+  #portfolio {
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .work {
+    gap: 1rem;
+  }
+
+  .work img {
+    height: 180px;
+  }
+
+  .layer h3 {
+    font-size: 1.3rem;
+  }
+
+  .layer p {
+    font-size: 1rem;
+  }
+
+  .tech-tag {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .view {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    #portfolio{
-        padding-top: 30%;
-        margin-left: 90px;
-        height: 100vh;
-        width: 80vw;
-    }
-.work-list{
-    display: none;
-}
-.phone{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    color: #ddacf5;
-}
-.phone img{
-    border-radius: 10px;
-}
-.phone {
-    position: relative;
-    animation: bounce 2s infinite;
-  }
   
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -112,13 +196,4 @@
       transform: translateY(-15px);
     }
   }
-  .phone div{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-.phone p{
-    font-size: 12px;
-    font-weight: 300;
-}
 } 

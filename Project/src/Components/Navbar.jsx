@@ -1,47 +1,49 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { NavLink } from "react-router-dom";
 import "./Navbar.css"
-import home from "../Images/home-page.png"
-import about from "../Images/about-me.png"
-import portfolio from "../Images/portfolio.png"
-import contact from "../Images/contact.png";
-
-
+import { AiOutlineHome, AiOutlineUser, AiOutlineFolderOpen, AiOutlineMail } from 'react-icons/ai';
 
 const Navbar = () => {
     return (
-        <nav className='outer opacity-95'>
-            <div className='img'>
-                <p>
-                    IFEOLUWA <br /> OYEYEMI
-                </p>
-            </div>
-            <div className='outer-inner'>
-            <ul className='inner'>
-                <li className="link">
-                    <Link to="home" spy={true} smooth={true} offset={50} duration={800}  ><img className='imgg' src={home} alt="" /> 
-                    </Link>
-                </li>
-                <li className='link'>
-                    <Link to="about" spy={true} smooth={true} offset={50} duration={800} ><img className='imgg' src={about} alt="" />
-                    </Link>
-                </li>
-                <li className='link'>
-                    <Link to="portfolio" spy={true} smooth={true} offset={50} duration={800} ><img  className='imgg' src={portfolio} alt="" />
-                    </Link> 
-                </li>
-                <li className='link'>
-                    <Link to="contacts"spy={true} smooth={true} offset={50} duration={800} ><img  className='imgg' src={contact} alt="" /></Link>
-                </li>
+        <div className='sidebar'>
+            <nav>
+                <ul>
+                    <li>
+                        <NavLink to="/" className={({isActive}) => 
+                            isActive ? 'sidebar-link active' : 'sidebar-link'
+                        }> 
+                            <AiOutlineHome size={20} />
+                            <span>Home</span> 
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about" className={({isActive}) => 
+                            isActive ? 'sidebar-link active' : 'sidebar-link'
+                        }> 
+                            <AiOutlineUser size={20} />
+                            <span>About</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/portfolio" className={({isActive}) => 
+                            isActive ? 'sidebar-link active' : 'sidebar-link'
+                        }> 
+                            <AiOutlineFolderOpen size={20} />
+                            <span>My Work</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact" className={({isActive}) => 
+                            isActive ? 'sidebar-link active' : 'sidebar-link'
+                        }> 
+                            <AiOutlineMail size={20} />
+                            <span>Contact</span>
+                        </NavLink>
+                    </li>
                 </ul>
-            </div>
-            <div className='quotes'>
-                <p>"Code is like humor. When you have to explain it, it's bad." - Cory House</p>
-                </div>
-      </nav>
-        
-         
-  )
+            </nav>
+        </div>
+    )
 }
 
 export default Navbar
