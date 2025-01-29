@@ -11,12 +11,11 @@
 }
 
 .professional-summary h2 {
-  font-size: 2.5rem;
+  font-size: 50px;
   margin-bottom: 1.5rem;
   color: wheat;
   position: relative;
 }
-
 
 .professional-summary p {
   font-size: 2rem;
@@ -27,7 +26,10 @@
 .skills-section {
   margin-top: 2rem;
 }
-
+.skills-section h2{
+  font-size: 30px;
+  position: relative;
+}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -49,7 +51,7 @@
 .skill-name {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 20px;
 }
 
 .skill-bar {
@@ -71,33 +73,13 @@
     padding: 30px 15px;
     gap: 2rem;
   }
-  
-  .professional-summary h2 {
-    font-size: 1.8rem;
-  }
-  
   .professional-summary p {
-    font-size: 1.6rem;
     line-height: 1.6;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .text h1 {
-    font-size: 18px;
-    left: 10px;
-  }
-
-  .text p, .textp p {
-    font-size: 16px;
-  }
-
-  .container {
-    flex-direction: column;
-    gap: 20px;
   }
 }
 
@@ -108,49 +90,12 @@
   }
   
   .professional-summary h2 {
-    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   
   .professional-summary p {
-    font-size: 1.2rem;
     line-height: 1.5;
   }
-
-  .skill-name {
-    font-size: 1rem;
-  }
-
-  .text h1 {
-    font-size: 16px;
-  }
-
-  .text p, .textp p {
-    font-size: 14px;
-  }
-}
-
-.text h1{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "Crimson Text", serif;
-    left: 20px;   
-    color: wheat;
-}
-
-.text p{
-    font-size: 18px; 
-    font-family: "Crimson Text", serif;
-}
-.textp p{
-    font-size: 18px; 
-    font-family: "Crimson Text", serif;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-   
 }
 
 

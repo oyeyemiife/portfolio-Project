@@ -9,6 +9,7 @@
   left: 0;
   top: 0;
   z-index: 1000;
+  font-family: "Crimson Text", serif;
 }
 
 main {
@@ -25,7 +26,7 @@ main {
   margin: 1rem 0;
 }
 .sidebar ul li span{
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
 .sidebar-link {
@@ -37,6 +38,7 @@ main {
   border-radius: 8px;
   transition: all 0.3s ease;
   font-weight: 500;
+  gap: 1rem;
 }
 
 .sidebar-link:hover {
@@ -78,8 +80,8 @@ main {
     margin: 0;
   }
 
-  .sidebar ul li span {
-    font-size: 0.8rem;
+  .sidebar ul li span{
+    font-size: 20px;
   }
 
   .sidebar-link {
@@ -104,8 +106,8 @@ main {
     margin-bottom: 50px;
   }
 
-  .sidebar ul li span {
-    font-size: 0.7rem;
+  .sidebar ul li span{
+    font-size: 20px;
   }
 
   .sidebar-link {
