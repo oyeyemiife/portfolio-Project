@@ -70,7 +70,7 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: 30px 15px;
+    padding: 40px 20px;
     gap: 2rem;
   }
   .professional-summary p {
@@ -85,7 +85,7 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 20px 10px;
+    padding: 40px 20px;
     gap: 1.5rem;
   }
   

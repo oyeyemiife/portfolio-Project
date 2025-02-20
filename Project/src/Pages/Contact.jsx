@@ -48,14 +48,6 @@ const Contact = () => {
           <button type="submit">Send Email</button>
         </form>
 
-        <div className="contact-info">
-          <h3>Other Ways to Connect</h3>
-          <p className="response-time">I typically respond within 24 hours</p>
-          <div className="social-links">
-            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i className="fab fa-linkedin"><img src={ig} alt="" /></i></a>
-            <a href="https://github.com/oyeyemiife"><i className="fab fa-github"><img src={git} alt="" /></i></a>
-          </div>
-        </div>
       </div>
     </section>
   )
