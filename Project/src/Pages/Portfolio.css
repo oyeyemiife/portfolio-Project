@@ -164,21 +164,21 @@
   }
 
   .layer h3 {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .layer p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .tech-tag {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     padding: 0.2rem 0.5rem;
   }
 
   .view {
     padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 }
 
